@@ -48,3 +48,6 @@ services:
       context: ./frontend
     networks:
       - dev
+
+volumes:
+  dbdata:
