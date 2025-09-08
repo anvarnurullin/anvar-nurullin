@@ -5,7 +5,7 @@ import axios from 'axios';
 function App() {
   const [message, setMessage] = useState(null);
   const fetchMessage = () => {
-    axios.get('http://localhost:8000/message').then((r) => {
+    axios.get('/api/message').then((r) => {
       setMessage(r.data)
     })
   }
